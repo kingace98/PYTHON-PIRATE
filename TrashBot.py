@@ -5,7 +5,7 @@ import time
 chromeOptions = webdriver.ChromeOptions()
 driver = webdriver.Chrome(executable_path=r'C:\Selenium\chromedriver.exe', chrome_options=chromeOptions)
 
-#Goes to teams website
+#Goes to teams recycle website
 driver.get('https://web.microsoftstream.com/admin?view=RecycleBin')
 time.sleep(3)
 
@@ -15,7 +15,7 @@ search.send_keys('itintern1@theacademyofscholars.onmicrosoft.com')
 search.send_keys(Keys.RETURN)
 time.sleep(4)
 find = driver.find_element_by_name('passwd')
-find.send_keys('Xun55317')
+find.send_keys('######')
 find.send_keys(Keys.RETURN)
 time.sleep(5)
 yes = driver.find_element_by_id('idSIButton9')
